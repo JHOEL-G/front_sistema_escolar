@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+.scrollbar-hide::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.3);
+    border-radius: 3px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.5);
+}
+
+:root {
+    --bg-app: #0f172a;
+}
+
+html,
+body,
+#root,
+.layout-container {
+    background-color: var(--bg-app);
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(226, 232, 240, 0.5);
+    border-radius: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+}
+
+body.is-fullscreen-video>div>aside,
+body.is-fullscreen-video [class*="shrink-0"][class*="h-full"] {
+    display: none !important;
+}
